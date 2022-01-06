@@ -17,9 +17,9 @@
         <exclude name="Drupal.Semantics.FunctionT.NotLiteralString"/>
     </rule>
 
-    <file>web/modules/custom</file>
-    <file>web/themes/custom</file>
-    <file>web/sites</file>
+    <file>docroot/modules/custom</file>
+    <file>docroot/themes/custom</file>
+    <file>docroot/sites</file>
 
     <!-- Exclude JS and CSS, this is covered by yarn scripts -->
     <exclude-pattern>**/*.js</exclude-pattern>

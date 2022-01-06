@@ -146,13 +146,13 @@ class DevScaffoldInstallerPlugin implements PluginInterface, EventSubscriberInte
         if ($this->environment === 'ddev') {
             $vendor = $this->config->get('vendor-dir');
             $fs = new Filesystem();
-            $fs->ensureDirectoryExists('web/sites/firefox');
-            $fs->ensureDirectoryExists('web/sites/chrome');
+            $fs->ensureDirectoryExists('docroot/sites/firefox');
+            $fs->ensureDirectoryExists('docroot/sites/chrome');
             $scaffoldFiles = [
                 'docker-compose.selenium.yaml' => '.ddev/docker-compose.selenium.yaml',
-                'firefox.settings.php' => 'web/sites/firefox/settings.php',
-                'chrome.settings.php' => 'web/sites/chrome/settings.php',
-                'sites.php' => 'web/sites/sites.php',
+                'firefox.settings.php' => 'docroot/sites/firefox/settings.php',
+                'chrome.settings.php' => 'docroot/sites/chrome/settings.php',
+                'sites.php' => 'docroot/sites/sites.php',
             ];
             foreach ($scaffoldFiles as $scaffoldFile => $destination) {
                 $source = "$vendor/lullabot/drainpipe-dev/scaffold/$scaffoldFile";

@@ -44,5 +44,5 @@ jobs:
       - name: Run static tests when directories don't exist
         run: |
           cd ../drupal
-          rmdir web/modules/custom web/themes/custom
+          rmdir docroot/modules/custom docroot/themes/custom
           ./vendor/bin/task test:static

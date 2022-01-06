@@ -24,8 +24,8 @@ Drupal core and contributed modules against
 
 #### `test:lint`
 
-- YAML lint on `.yml` files in the `web` directory
-- Twig lint on files in `web/modules`, `web/profiles`, and `web/themes`
+- YAML lint on `.yml` files in the `docroot` directory
+- Twig lint on files in `docroot/modules`, `docroot/profiles`, and `docroot/themes`
 - `composer validate`
 
 These cannot currently be customised.
@@ -35,12 +35,12 @@ See [#9](https://github.com/Lullabot/drainpipe-dev/issues/9).
 
 Runs [PHPStan](https://phpstan.org/) with
 [mglaman/phpstan-drupal](https://github.com/mglaman/phpstan-drupal) on
-`web/modules/custom`, `web/themes/custom`, and `web/sites`.
+`docroot/modules/custom`, `docroot/themes/custom`, and `docroot/sites`.
 
 #### `test:phpunit`
 
-Runs PHPUnit tests in `web/modules/custom`, `web/themes/custom`, and
-`web/sites`.
+Runs PHPUnit tests in `docroot/modules/custom`, `docroot/themes/custom`, and
+`docroot/sites`.
 
 #### `test:phpcs`
 
